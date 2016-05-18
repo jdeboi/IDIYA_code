@@ -1,3 +1,10 @@
+/* install 2 libraries
+      https://github.com/adafruit/Adafruit_LED_Backpack
+      https://github.com/adafruit/Adafruit-GFX-Library
+  place folders in: Documents > Arduino > libraries
+*/
+
+
 #include <Wire.h>
 #include "Adafruit_LEDBackpack.h"
 #include "Adafruit_GFX.h"
@@ -25,6 +32,7 @@ void loop() {
   distance = int(analogRead(A0)/1023.0*5.0*1000/9.8);
   //setMatrix();
   printMatrix();
+  delay(500);
 }
 
 
