@@ -22,8 +22,8 @@ void setup() {
 
 void loop() {
   distance = int(analogRead(A0)/1023.0*5.0/1000/9.8);
-  setMatrix();
-  
+  //setMatrix();
+  printMatrix();
 }
 
 
